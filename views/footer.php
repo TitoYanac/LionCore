@@ -1,19 +1,19 @@
 <footer>
 	<div class=" container">
-		<div class="row">
-		<div class="col-md-4">
+		<div class="d-flex flex-wrap justify-content-between">
+		<div class="subscribe">
 			<h4>SUSCRIBETE A NUESTRAS OFERTAS</h3>
 			<p>Infórmate de lo último de Lion Core. Nuestras ofertas y novedades directamente en tu e-mail.</p>
 			<label for="emailfooter">Email*</label>
-			<form class="d-flex">
-				<div class="form-group  w-75">
+			<form class="row">
+				<div class="form-group  col-8">
 					<input type="email" class="form-control" id="emailfooter" aria-describedby="emailHelp" placeholder="Enter email">
 				</div>
-				<button type="submit" class="btn btn-success  w-25">Suscribir</button>
+				<button type="submit" class="btn btn-success  col-4">Suscribir</button>
 			</form>
 			<small id="emailHelp" class="form-text text-muted">Lion Core se compromete a no compartir tu e-mail con nadie mas.</small>
 		</div>
-		<div class="col-md-4 text-center">
+		<div class="info">
 			<h4>SERVICIO AL CLIENTE</h3>
 			<ul>
 				<li><a href="#">Preguntas Frecuentes</a></li>
@@ -22,7 +22,7 @@
 			</ul>
 		
 		</div>
-		<div class="col-md-4 text-center">
+		<div class="info">
 			<h4>CONTÁCTANOS</h3>
 			<ul>
 				<li>+51 999 999 999</li>

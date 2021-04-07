@@ -6,7 +6,7 @@ footer{
 	margin-top: 50px;
 }
 footer *{
-	color: white !important;
+	color: white ;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -32,6 +32,13 @@ img{
 @media (max-width: 768px) { 
 	#drop-header{
 		width: 100%;
+	}
+	.subscribe{
+		width: 100%;
+	}
+	.info{
+		/*width: 50%;*/
+		margin-top: 50px;
 	}
 
 }

@@ -9,7 +9,10 @@
 	<link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-
+  <?php 
+  include '../models/loginfb.php'; 
+  include '../models/loginfb_callback.php';
+  ?>
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark d-flex justify-content-between container">
 			<a class="navbar-brand" href="#">LOGO</a>

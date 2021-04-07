@@ -3,21 +3,15 @@
 <?php include '../models/productos.php'; ?>
 <section class="container">
 	<div class="row">
-		<div class="col-md-8">
+		<div class="col-xl-8">
 			<h1>PC COMPLETA</h1>
-		</div>
-		<div class="col-md-4">
-			<h1>OFERTAS</h1>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-8">
 			<img src="../assets/img/img1.png" alt="">
 		</div>
-		<div class="col-md-4">
+		<div class="col-xl-4">
 			<div class="row h-100">
-				<div class="align-self-start"><img src="../assets/img/img2.png" alt=""></div>
-				<div class="align-self-end"><img src="../assets/img/img3.png" alt=""></div>
+			<h1>OFERTAS</h1>
+				<div class="col-6 col-lg-12 align-self-start"><img src="../assets/img/img2.png" alt=""></div>
+				<div class="col-6 col-lg-12 align-self-end"><img src="../assets/img/img3.png" alt=""></div>
 			</div>
 		</div>
 	</div>
@@ -36,19 +30,23 @@
 		
 	</div>
 
-	<div class="card-group row">
+	<section class="row">
 <?php foreach ($productos as $key => $value) { ?>
-		<div class="card" style="min-width: 25%;max-width: 33.3%; margin: 15px;">
-			<img class="card-img-top" src="../assets/img/celular.jpg" alt="Card image cap">
-			<div class="card-body">
-				<h5 class="card-title"><?php echo $value->titulo; ?></h5>
-				<p class="card-text">Descripcion.</p>
-				<p class="card-text">Descripcion.</p>
-				<a href="#" class="btn btn-success">Comprar</a>
-			</div>
-		</div>
+		<article class="col-6 col-lg-4 col-xl-3 mb-3">
+			<figure class="col-12 h-100" style="border: 2px #198754 solid; padding: 15px;">
+				<img src="../assets/img/celular.jpg" alt="Card image cap">
+				<figcaption class="col-12">
+					<h5><?php echo $value->titulo; ?></h5>
+					<p class="mb-1">Descripcion.</p>
+					<p class="mb-1">Descripcion.</p>
+					<p class="mb-1">Descripcion.</p>
+					<p class="mb-1">Precio: S/.<?php echo $value->precio; ?></p>
+					<a href="#" class="btn btn-success">Comprar</a>
+				</figcaption>
+			</figure>
+		</article>
 <?php } ?>
-	</div>
+	</section>
 
 </section>
 
