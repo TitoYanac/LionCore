@@ -1,4 +1,4 @@
 <?php 
-$url= "/Proyectos/LionCore/views/home.php";
+$url= "/views/home.php";
 header("Location:".$url);
 ?>
